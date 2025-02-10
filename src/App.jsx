@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const App = () => {
   return (
     <div>
@@ -5,9 +7,9 @@ const App = () => {
       <p>Here are some examples of links to other pages</p>
       <nav>
         <ul>
-          <li>
-            <a href="profile">Profile page</a>
-          </li>
+          <li><Link to="profile">Profile page</Link></li>
+          <li><Link to="profile/popeye">Popeye</Link></li>
+          <li><Link to="profile/spinach">Spinach</Link></li>
         </ul>
       </nav>
     </div>
